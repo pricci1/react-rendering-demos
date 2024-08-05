@@ -1,0 +1,20 @@
+{
+  "name": "server-side-rendering",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "bun --conditions=\"react-server\"",
+    "build": "bun build ./client.js --outdir ./dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@physis/react-server-dom-esm": "^19.0.0-rc-cc0e491-20240519",
+    "react": "^19.0.0-rc-cc0e491-20240519",
+    "react-dom": "^19.0.0-rc-cc0e491-20240519"
+  }
+}
