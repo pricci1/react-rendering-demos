@@ -1,0 +1,18 @@
+{
+  "name": "server-side-rendering",
+  "module": "client.js",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./client.js --outdir ./dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
