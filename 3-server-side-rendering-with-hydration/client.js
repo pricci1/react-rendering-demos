@@ -1,4 +1,6 @@
-import { hydrateRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 
-hydrateRoot(document.getElementById('root'), <App />);
+const rootDiv = document.getElementById('root')
+
+ReactDOM.hydrateRoot(rootDiv, <App />);
