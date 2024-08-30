@@ -1,4 +1,4 @@
-# server-side-rendering
+# client-side-rendering
 
 To install dependencies:
 
@@ -9,7 +9,9 @@ bun install
 To run:
 
 ```bash
-bun run index.js
+bun run build
 ```
 
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Then you have to server the contents of the `dist` folder to open the site.
+
+E.g. using python's http server: `python -m http.server 8181 --directory dist`

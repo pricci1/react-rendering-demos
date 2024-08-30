@@ -12,4 +12,4 @@ To run:
 bun run index.js
 ```
 
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Visit http://localhost:3444
