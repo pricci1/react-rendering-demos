@@ -1,10 +1,10 @@
-import { renderToString } from 'react-dom/server';
+import ReactDOM from 'react-dom/server';
 
 import App from './App';
 
 Bun.serve({
   async fetch() {
-    const appString = renderToString(<App />);
+    const appString = ReactDOM.renderToString(<App />);
     const html = `
       <!DOCTYPE html>
       <html>
