@@ -3,4 +3,7 @@ import App from './App';
 
 const rootDiv = document.getElementById('root')
 
-ReactDOM.hydrateRoot(rootDiv, <App />);
+const serializedData = document.getElementById('server-data').textContent;
+const data = JSON.parse(serializedData);
+
+ReactDOM.hydrateRoot(rootDiv, <App {...data} />);

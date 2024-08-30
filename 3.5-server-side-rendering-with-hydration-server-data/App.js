@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function App() {
+function App({ randomValueFromServer }) {
   const [count, setCount] = useState(0)
 
   const random = Math.random()
@@ -12,6 +12,7 @@ function App() {
         Count is {count}
       </button>
       <p>A random number: {random}</p>
+      <p>Value from server: {randomValueFromServer}</p>
     </>
   )
 }
