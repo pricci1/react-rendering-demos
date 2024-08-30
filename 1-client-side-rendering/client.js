@@ -4,9 +4,6 @@ import App from './App'
 
 const rootDiv = document.getElementById('root')
 const reactRoot = ReactDOM.createRoot(rootDiv)
+const appReactElement = React.createElement(App, null)
 
-reactRoot.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+reactRoot.render(appReactElement) // Eq: reactRoot.render(<App />)
